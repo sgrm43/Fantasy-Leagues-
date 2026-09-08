@@ -1,0 +1,38 @@
+.env
+.env.local
+.env.*
+
+node_modules/
+.netlify/
+
+# Local-only backups and scratch files
+.local-backups/
+.backups/
+backups/
+local-backups/
+.tmp/
+tmp/
+*.tmp
+*.temp
+*.bak
+*~
+
+# Runtime data stays local until the cloud-storage migration
+data/cache/
+data/snapshots/
+data/history/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Tool logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log

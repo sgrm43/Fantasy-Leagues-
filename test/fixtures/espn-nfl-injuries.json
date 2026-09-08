@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-09-02T17:00:00Z",
+  "injuries": [
+    {
+      "id": "25",
+      "displayName": "San Francisco 49ers",
+      "shortDisplayName": "49ers",
+      "abbreviation": "SF",
+      "injuries": [
+        {
+          "id": "149141",
+          "longComment": "Jordan Example was limited during Wednesday's practice after reporting hamstring soreness. The team plans to evaluate him again after Thursday's session before deciding whether he will carry a designation into the weekend. His participation level and response to increased work will determine whether he is cleared without limitations. This extra fixture sentence makes the source narrative intentionally longer than the storage limit so truncation can be verified without using a real player's copyrighted report.",
+          "shortComment": "Example was limited in Wednesday's practice.",
+          "status": "Questionable",
+          "date": "2026-09-02T16:30:00Z",
+          "athlete": {
+            "id": "4429000",
+            "displayName": "Jordan Example",
+            "shortName": "J. Example",
+            "position": {
+              "id": "1",
+              "displayName": "Wide Receiver",
+              "abbreviation": "WR"
+            },
+            "team": {
+              "id": "25",
+              "displayName": "San Francisco 49ers",
+              "abbreviation": "SF"
+            }
+          },
+          "type": {
+            "id": "2",
+            "name": "INJURY_STATUS_QUESTIONABLE",
+            "description": "Questionable",
+            "abbreviation": "Q"
+          },
+          "details": {
+            "type": "Strain",
+            "location": "Hamstring",
+            "detail": "Soreness",
+            "side": "Right",
+            "returnDate": "2026-09-06T17:00:00Z",
+            "practiceStatus": {
+              "description": "Limited participation"
+            },
+            "fantasyStatus": {
+              "description": "Questionable",
+              "abbreviation": "Q"
+            }
+          },
+          "source": {
+            "id": "1",
+            "description": "ESPN",
+            "state": "published"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "displayName": "Buffalo Bills",
+      "abbreviation": "BUF",
+      "injuries": [
+        {
+          "id": "149142",
+          "shortComment": "Awaiting another evaluation.",
+          "athlete": {
+            "id": "4429001",
+            "displayName": "Casey Sample",
+            "position": { "abbreviation": "RB" }
+          },
+          "details": {
+            "location": "Ankle"
+          }
+        }
+      ]
+    }
+  ]
+}

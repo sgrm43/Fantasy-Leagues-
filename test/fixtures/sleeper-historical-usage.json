@@ -1,0 +1,100 @@
+{
+  "catalog": {
+    "s1": {
+      "player_id": "s1",
+      "espn_id": 1001,
+      "gsis_id": "00-0001001",
+      "full_name": "Alpha Runner",
+      "position": "RB",
+      "team": "SEA"
+    },
+    "s2": {
+      "player_id": "s2",
+      "espn_id": "1002",
+      "gsis_id": "00-0001002",
+      "first_name": "Bravo",
+      "last_name": "Passer",
+      "position": "QB",
+      "team": "SF"
+    },
+    "s3": {
+      "player_id": "s3",
+      "full_name": "Name Only",
+      "position": "WR",
+      "team": "LAR"
+    }
+  },
+  "weeks": {
+    "3": [
+      {
+        "player_id": "s1",
+        "season": 2026,
+        "week": 3,
+        "team": "SEA",
+        "opponent": "ARI",
+        "game_id": "g3",
+        "stats": {
+          "off_snp": 30,
+          "tm_off_snp": 60,
+          "rec_tgt": 3,
+          "rec": 2,
+          "rush_att": 10,
+          "rush_yd": 48,
+          "rec_yd": 12,
+          "rec_rz_tgt": 1,
+          "rush_rz_att": 2,
+          "pts_ppr": 8
+        }
+      },
+      {
+        "player_id": "s2",
+        "season": 2026,
+        "week": 3,
+        "stats": {
+          "off_snp": 59,
+          "tm_off_snp": 60,
+          "pass_att": 31,
+          "fantasy_points": 20.25
+        }
+      },
+      {
+        "player_id": "not-selected",
+        "season": 2026,
+        "week": 3,
+        "stats": {
+          "rec_tgt": 20
+        }
+      }
+    ],
+    "4": {
+      "s1": {
+        "season": 2026,
+        "week": 4,
+        "team": "SEA",
+        "opponent": "SF",
+        "stats": {
+          "off_snp": 45,
+          "tm_off_snp": 60,
+          "rec_tgt": 6,
+          "rec": 5,
+          "routes_run": 21,
+          "rush_att": 15,
+          "rush_yd": 70,
+          "rec_yd": 35,
+          "rz_tgt": 2,
+          "rz_car": 4,
+          "pts_half_ppr": 17.5
+        }
+      },
+      "s2": {
+        "season": 2026,
+        "week": 4,
+        "stats": {
+          "snap_pct": 98.3,
+          "pass_att": 37,
+          "pts_std": 23.1
+        }
+      }
+    }
+  }
+}
