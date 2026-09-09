@@ -21,7 +21,7 @@ npm run dev       # restart when source files change
 
 ## Current scope
 
-- Read-only connections for the supplied Sleeper league and three ESPN leagues
+- Read-only connections for the two supplied Sleeper leagues and three ESPN leagues
 - Exact platform scoring settings, lineup slots, teams, and current rosters
 - A current local cache plus capped six-hour historical snapshots
 - Canonical player identity records that preserve platform IDs (names are display labels only)

@@ -28,7 +28,8 @@ export const config = {
     { key: 'sleeper', name: 'Sleeper League', platform: 'sleeper', id: '1389327804176277504', ownerTeam: 'Ad Te Venio' },
     { key: 'champions', name: 'League of Champions', platform: 'espn', id: '1396249048', ownerTeam: 'Big C' },
     { key: 'frontera', name: 'Frontera Bowl', platform: 'espn', id: '48114707', ownerTeam: 'Bang Bang' },
-    { key: 'pistoleros', name: 'Los Pistoleros', platform: 'espn', id: '1764386137', ownerTeam: 'DeflateGate' }
+    { key: 'pistoleros', name: 'Los Pistoleros', platform: 'espn', id: '1764386137', ownerTeam: 'DeflateGate' },
+    { key: 'sundays', name: 'Sundays Are for DUI', platform: 'sleeper', id: '1400288398731649024', ownerTeam: 'sgrm43' }
   ]
 };
 

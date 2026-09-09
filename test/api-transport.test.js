@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createApiRouter, handleApiRequest } from '../src/api-router.js';
+import { config } from '../src/config.js';
 import netlifyApi from '../netlify/functions/api.js';
 
 function testRouter() {
@@ -74,4 +75,28 @@ test('Netlify Function normalizes the splat rewrite and delegates without starti
   assert.ok(response instanceof Response);
   assert.equal(response.status, 200);
   assert.equal((await response.json()).ok, true);
+});
+
+test('league endpoint exposes all five registered leagues independently to the frontend', async () => {
+  const states = config.leagues.map((definition) => ({
+    definition,
+    cache: { data: { key: definition.key, id: definition.id, name: definition.name } }
+  }));
+  const router = createApiRouter({ getLeagueStates: async () => states });
+  const response = await router(new Request('http://local.test/api/leagues'));
+  const payload = await response.json();
+
+  assert.equal(response.status, 200);
+  assert.deepEqual(payload.map((state) => state.definition.key), [
+    'sleeper', 'champions', 'frontera', 'pistoleros', 'sundays'
+  ]);
+  assert.equal(new Set(payload.map((state) => state.definition.key)).size, 5);
+  assert.equal(new Set(payload.map((state) => state.definition.id)).size, 5);
+  assert.deepEqual(payload.at(-1).definition, {
+    key: 'sundays',
+    name: 'Sundays Are for DUI',
+    platform: 'sleeper',
+    id: '1400288398731649024',
+    ownerTeam: 'sgrm43'
+  });
 });

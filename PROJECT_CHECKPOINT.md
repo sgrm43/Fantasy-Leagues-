@@ -1,6 +1,6 @@
 # Fantasy League Project — Checkpoint
 
-Updated: September 6, 2026
+Updated: September 8, 2026
 
 ## Start here next time
 
@@ -20,6 +20,7 @@ If it is not running, start it from this project with `npm start`.
 ## Connected fantasy teams
 
 - Sleeper — Ad te venio 🏈
+- Sundays Are for DUI — sgrm43
 - League of Champions — Big C
 - Frontera Bowl — Bang Bang Niner Gang
 - Los Pistoleros — Deflate Gate
@@ -28,7 +29,7 @@ Private ESPN cookies are already stored in `.env.local`. Never display or copy t
 
 ## Working now
 
-- All four leagues sync with correct teams and rosters.
+- All five leagues sync with correct teams and rosters.
 - League-specific scoring, weekly projections, floor/median/ceiling ranges, bust/spike and point-threshold chances.
 - Legal full-lineup optimization for best average, safer floor, and higher upside.
 - Weekly matchup estimate, injury/practice context, weather, venue, betting context, recent player usage, and opponent-position response.

@@ -5,7 +5,7 @@ import os from 'node:os';
 import path from 'node:path';
 import { createStorage, detectStorageRuntime, NETLIFY_BLOB_STORE_NAME } from '../src/storage.js';
 
-const LEAGUE_KEYS = ['sleeper', 'champions', 'frontera', 'pistoleros'];
+const LEAGUE_KEYS = ['sleeper', 'champions', 'frontera', 'pistoleros', 'sundays'];
 
 test('local storage retains filesystem cache behavior under the configured data directory', async (t) => {
   const dataDir = await fs.mkdtemp(path.join(os.tmpdir(), 'fantasy-storage-'));
@@ -28,7 +28,7 @@ test('local storage retains filesystem cache behavior under the configured data 
   assert.equal((await storage.listSnapshots('sleeper')).length, 1);
 });
 
-test('Netlify runtime routes all four league caches through site-scoped Blobs without filesystem writes', async () => {
+test('Netlify runtime routes all five league caches through site-scoped Blobs without filesystem writes', async () => {
   const blobStore = memoryBlobStore();
   const filesystemCalls = [];
   const forbiddenFileSystem = new Proxy({}, {
